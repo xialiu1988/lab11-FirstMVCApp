@@ -1,18 +1,29 @@
 ﻿body {
-    background-color: pink;
+    background-color: white;
     text-align: center;
 }
 
 h1 {
-    width: 500px;
+    /*width: 500px;*/
     margin: 0 auto;
-    background: gray;
+    color:red;
+    font-size:30px;
     text-align: center;
 }
 
 
-form {
+.row {
+    /*min-height: 300px;*/
+    width: 70%;
+    height:500px;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    text-align: center;
+    border: 10px solid red;
+}
 
+.formstyle {
     display: inline-block;
-
+    padding-top: 100px;
 }

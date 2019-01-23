@@ -10,25 +10,25 @@
 </head>
 <body>
     <h1>Here Is Your Results</h1>
+   
+        <table>
 
-    <table>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Year</td>
+                    <td>@item.Honor</td>
+                    <td>@item.Name</td>
+                    <td>@item.Country</td>
+                    <td>@item.BirthYear</td>
+                    <td>@item.DeathYear</td>
+                    <td>@item.Title</td>
+                    <td>@item.Category</td>
+                    <td>@item.Context</td>
+                </tr>
+            }
 
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Year</td>
-                <td>@item.Honor</td>
-                <td>@item.Name</td>
-                <td>@item.Country</td>
-                <td>@item.BirthYear</td>
-                <td>@item.DeathYear</td>
-                <td>@item.Title</td>
-                <td>@item.Category</td>
-                <td>@item.Context</td>
-            </tr>
-        }
-
-    </table>
+        </table>
 
 
 
