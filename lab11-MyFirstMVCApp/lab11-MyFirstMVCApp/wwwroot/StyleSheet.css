@@ -4,7 +4,7 @@
 }
 
 h1 {
-    width: 500px;
+    /*width: 500px;*/
     margin: 0 auto;
     color:red;
     font-size:30px;
@@ -13,7 +13,11 @@ h1 {
 
 
 .row {
-    min-height: 300px;
+    /*min-height: 300px;*/
+    width: 70%;
+    height:500px;
+    margin-left:auto;
+    margin-right:auto;
     position: relative;
     text-align: center;
     border: 10px solid red;
