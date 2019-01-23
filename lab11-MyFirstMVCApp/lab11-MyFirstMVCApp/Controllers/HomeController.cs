@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using lab11_MyFirstMVCApp.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,20 @@ namespace lab11_MyFirstMVCApp.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Index(int beginYear,int endYear)
+        {
+            return RedirectToAction("Results", new { beginYear, endYear });
+        }
+
+        [HttpGet]
+        public IActionResult Results(int beginYear, int endYear)
+        {
+           
+            return View(TimePerson.GetPersons(beginYear,endYear));
+        }
+
+
     }
 }

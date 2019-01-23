@@ -1,0 +1,44 @@
+﻿
+@model List<lab11_MyFirstMVCApp.Models.TimePerson>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <table>
+
+        <tr>
+            <td><h1>Here Is Your Results</h1></td>
+        </tr>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.Year</td>
+                <td>@item.Honor</td>
+                <td>@item.Name</td>
+                <td>@item.Country</td>
+                <td>@item.BirthYear</td>
+                <td>@item.DeathYear</td>
+                <td>@item.Title</td>
+                <td>@item.Category</td>
+                <td>@item.Context</td>
+            </tr>
+        }
+
+           
+
+
+        </table>
+
+
+
+
+   
+
+</body>
+</html>
