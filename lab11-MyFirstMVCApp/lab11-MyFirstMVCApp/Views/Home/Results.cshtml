@@ -9,14 +9,12 @@
     <link href="~/StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
-    
+    <h1>Here Is Your Results</h1>
+
     <table>
 
-        <tr>
-            <td><h1>Here Is Your Results</h1></td>
-        </tr>
-            @foreach (var item in Model)
-            {
+        @foreach (var item in Model)
+        {
             <tr>
                 <td>@item.Year</td>
                 <td>@item.Honor</td>
@@ -30,15 +28,12 @@
             </tr>
         }
 
-           
-
-
-        </table>
+    </table>
 
 
 
 
-   
+
 
 </body>
 </html>
