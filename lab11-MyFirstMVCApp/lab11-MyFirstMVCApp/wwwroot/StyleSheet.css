@@ -9,8 +9,9 @@
 h1 {
     /*width: 500px;*/
     margin: 0 auto;
-    color:red;
-    font-size:30px;
+    color: red;
+    font-size: 30px;
+    font-family: 'Kodchasan', sans-serif;
     text-align: center;
 }
 
@@ -37,4 +38,25 @@ div.buttontype {
 .bb {
     position: absolute;
     top: 50%;
+}
+
+label {
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th,td
+{
+    padding: 0.25rem;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    border: 5px solid #808080;
 }

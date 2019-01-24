@@ -7,33 +7,44 @@
 <head>
     <title>Results</title>
     <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Indie+Flower|Kodchasan" rel="stylesheet">
 </head>
 <body>
     <h1>Here Is Your Results</h1>
    
-        <table>
-
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Year</td>
-                    <td>@item.Honor</td>
-                    <td>@item.Name</td>
-                    <td>@item.Country</td>
-                    <td>@item.BirthYear</td>
-                    <td>@item.DeathYear</td>
-                    <td>@item.Title</td>
-                    <td>@item.Category</td>
-                    <td>@item.Context</td>
-                </tr>
-            }
-
-        </table>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Year</th>
+                <th scope="col">Honor</th>
+                <th scope="col">Name</th>
+                <th scope="col">Country</th>
+                <th scope="col">BirthYear</th>
+                <th scope="col">DeathYear</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Context</th>
+            </tr>
+        </thead>
 
 
 
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Year</td>
+                <td>@item.Honor</td>
+                <td>@item.Name</td>
+                <td>@item.Country</td>
+                <td>@item.BirthYear</td>
+                <td>@item.DeathYear</td>
+                <td>@item.Title</td>
+                <td>@item.Category</td>
+                <td>@item.Context</td>
+            </tr>
+        }
 
-
+    </table>
 
 </body>
 </html>
