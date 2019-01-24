@@ -28,10 +28,10 @@ namespace lab11_MyFirstMVCApp.Models
            
             //var line = reader.ReadLine();
 
-     string filepath=@"C:\Users\xialiu\codefellows401\Lab11-firstMVC\lab11-MyFirstMVCApp\lab11-MyFirstMVCApp\wwwroot\personOfTheYear.csv";
+    // string filepath=@"C:\Users\xialiu\codefellows401\Lab11-firstMVC\lab11-MyFirstMVCApp\lab11-MyFirstMVCApp\wwwroot\personOfTheYear.csv";
 
-           
-            var lines = File.ReadAllLines(filepath).Skip(1);
+  string filepath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../wwwroot/personOfTheYear.csv");
+        var lines = File.ReadAllLines(filepath).Skip(1);
 
             foreach (var item in lines)
             {
