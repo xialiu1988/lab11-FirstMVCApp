@@ -18,21 +18,27 @@ namespace lab11_MyFirstMVCApp.Models
         public string Category { get; set; }
         public string Context { get; set; }
 
+        /// <summary>
+        /// pass in two prameters and return a list as result
+        /// </summary>
+        /// <param name="beginYear"></param>
+        /// <param name="endYear"></param>
+        /// <returns>a list of TimePerson based on the query</returns>
 
 
         public static List<TimePerson> GetPersons(int beginYear,int endYear)
         {
             List<TimePerson> people = new List<TimePerson>();
-            //readfile
-           
-           
-            //var line = reader.ReadLine();
+            //readfile      
 
     // string filepath=@"C:\Users\xialiu\codefellows401\Lab11-firstMVC\lab11-MyFirstMVCApp\lab11-MyFirstMVCApp\wwwroot\personOfTheYear.csv";
 
   string filepath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../wwwroot/personOfTheYear.csv");
+            //skip the first line because there is no informatioh in the fisrt line just titles. start searching from second line
         var lines = File.ReadAllLines(filepath).Skip(1);
 
+            //iterate through that array and set the values appropriatly to a new timeperson object
+            //create the full list of peoples from the cvs file
             foreach (var item in lines)
             {
                 string[] columns = item.Split(',');
@@ -51,12 +57,11 @@ namespace lab11_MyFirstMVCApp.Models
 
             }
 
-            //File.ReadAllLines(in the array)
 
-            //iterate through that array and set the values appropriatly to a new timeperson object
 
-            //csv is comma delimated
-            //create the full list of peoples from the cvs file
+         
+
+        
             //Then do the LINQ query with lamda to filter
 
         List<TimePerson> listofPeople = people.Where(p => (p.Year >= beginYear) && (p.Year <= endYear)).ToList();
