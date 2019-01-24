@@ -1,6 +1,9 @@
 ﻿body {
-    background-color: white;
-    text-align: center;
+    background-color:gold;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    /*text-align: center;*/
 }
 
 h1 {
@@ -26,4 +29,12 @@ h1 {
 .formstyle {
     display: inline-block;
     padding-top: 100px;
+}
+div.buttontype {
+  
+    text-align: center;
+}
+.bb {
+    position: absolute;
+    top: 50%;
 }
