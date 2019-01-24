@@ -3,21 +3,23 @@
 <head>
     <title>Home Page</title>
     <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Indie+Flower|Kodchasan" rel="stylesheet">
 </head>
 <body>
     
     <div class="row">
         <h1>Time</h1>
         <form method="post" class="formstyle">
+            <div>
+                <label name="beginYear">Begin Year</label>
+                <input name="beginYear" type="number" />
 
-            <label name="beginYear">Begin Year</label>
-            <input name="beginYear" type="number" />
-
-            <label name="endYear">End Year</label>
-            <input name="endYear" type="number" />
-
-            <button type="submit">SUBMIT</button>
-
+                <label name="endYear">End Year</label>
+                <input name="endYear" type="number" />
+            </div>
+            <div class="buttontype">
+                <button type="submit" class="bb">SUBMIT</button>
+            </div>
         </form>
 
     </div>
