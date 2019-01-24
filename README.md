@@ -15,7 +15,7 @@ Create a web app that will allow a user to put in a span of 2 different years, a
 
 
 
-![home](~/Home.png)
+![home](../lab11-MyFirstMVCApp/lab11-MyFirstMVCApp/wwwroot/Home.png)
 
 
 
@@ -28,7 +28,7 @@ step2: type in the begin year and end year ,you will get result page, which look
 
 
 
-![result](~/result.png)
+![result](../lab11-MyFirstMVCApp/lab11-MyFirstMVCApp/wwwroot/result.png)
 
 
 
